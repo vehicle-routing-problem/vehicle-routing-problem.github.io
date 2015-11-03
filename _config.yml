@@ -8,21 +8,20 @@ safe: false
 ### site serving configuration ###
 exclude: [CNAME, README.md, .gitignore]
 permalink: / ## disables post output
-timezone: null
+timezone: America/Sao_Paulo
 lsi: false
 markdown: kramdown
 highlighter: pygments
 
 
 ### content configuration ###
-title:       "SinglePaged - Title: Edit me in _config.yml!"
-keywords:    "SinglePaged, jekyll, template, github, blog, single page"
-description: "A single-page template for Jekyll based blogs (like what you'd use on github pages!)"
-source_link: "https://github.com/t413/SinglePaged"
+title:       "Vehicle Routing Problem"
+keywords:    "vehicle routing problem, np complete problem, np hard"
+description: "The Vehicle Routing Problem (VRP) can be described as the problem of designing optimal delivery or collection routes from one or several depots to a number of geographically scattered cities or customers, subject to side constraints. (LAPORTE, 1992)"
+source_link: "https://vehicle-routing-problem.github.io/"
 favicon:     #put a path like: "img/favicon.ico"
 touch_icon:  #put a path like: "img/apple-touch-icon.png"
 google_analytics_key: ## put YOUR key here to enable tracking! (blank to disable)
-
 
 ### template colors, used site-wide via css ###
 colors:
@@ -33,4 +32,4 @@ colors:
   purple:    '#c869bf'
   orange:    '#fab125'
   turquoise: '#0fbfcf'
-  
+
