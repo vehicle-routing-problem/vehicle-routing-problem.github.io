@@ -1,8 +1,2 @@
 
-
-Design by Tim O'Brien [t413.com](http://t413.com/)
-&mdash;
-[SinglePaged theme](https://github.com/t413/SinglePaged)
-&mdash;
-this site is [open source]({{ site.source_link }})
-
+Made with <span class="heart">♥</span> by <a href="http://www.profmarciofunes.com.br/" title="Marcio Funes" target="_blank">Marcio Funes</a> and <a href="http://thpoiani.com.br" title="Thiago Poiani" target="_blank">Thiago Poiani</a>.
