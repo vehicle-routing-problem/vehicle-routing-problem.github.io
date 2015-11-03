@@ -19,14 +19,14 @@
 
     <nav><ul>
       {% for node in site.posts reversed %}
-        {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
+        {% capture id %}{{ node.id | replace:'/','_' | downcase }}{% endcapture %}
         <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
       {% endfor %}
     </ul></nav>
 
 
     {% for page in site.posts reversed %}
-      {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
+      {% capture id %}{{ page.id | replace:'/','_' | downcase }}{% endcapture %}
       <div id="{{id}}" class="section p-{{id}}">
         {% if page.icon %}
         <div class="subtlecircle sectiondivider imaged">

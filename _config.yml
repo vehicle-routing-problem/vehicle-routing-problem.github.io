@@ -1,18 +1,13 @@
----
-
 port: 4000
 host: 0.0.0.0
 safe: false
 
-
 ### site serving configuration ###
 exclude: [CNAME, README.md, .gitignore]
-permalink: / ## disables post output
 timezone: America/Sao_Paulo
 lsi: false
 markdown: kramdown
 highlighter: pygments
-
 
 ### content configuration ###
 title:       "Vehicle Routing Problem"
@@ -32,4 +27,3 @@ colors:
   purple:    '#c869bf'
   orange:    '#fab125'
   turquoise: '#0fbfcf'
-
