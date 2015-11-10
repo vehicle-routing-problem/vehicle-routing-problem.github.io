@@ -10,6 +10,23 @@
     to { transform: scale(1.1); }
 }
 
+a.not-doted {
+    border: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img.polaroid {
+    background: #fff;
+    margin: 0 0 27px 30px;
+    padding: 10px 10px 15px;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+}
+
+
 .heart {
     font-size: 1.4em;
     color: #ff79c6;
