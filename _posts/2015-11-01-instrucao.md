@@ -30,6 +30,8 @@ style: center
 </h2>
 
 <div class="slide">
+<p></p>
+
 #### **Gerenciamento da Cadeia de Suprimentos**
 
 Sistemas logísticos são definidos pelo planejamento, organização e controle de operações de fluxo de mercadorias. Suas atividades principais são: aquisição de matéria-prima, gestão de estoques, processamento de pedidos, compras e armazenagem, manuseio de materiais, programação da produção e entrega ao consumidor final.
@@ -63,6 +65,8 @@ Para minimizar custos e tornar todo o processo mais eficiente, são aplicados pr
 </h2>
 
 <div class="slide">
+<p></p>
+
 <a href="http://dl.acm.org/citation.cfm?id=578533" target="_blank" title="Computers and intractability : a guide to the theory of NP-completeness">
 `Garey, Michael R., and David S. Johnson. "Computers and intractability : a guide to the theory of NP-completeness." San Francisco: W.H. Freeman (1979).`
 </a>
