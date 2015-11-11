@@ -20,29 +20,23 @@ style: center
 
 <br>
 
-O **Problema de Roteamento de Veículos** (*Vehicle Routing Problem* ou *VRP*) foi introduzido em 1959 por [**Dantzig** e **Ramser**](http://www.jstor.org/stable/2627477 "The Truck Dispatching Problem") com o artigo **"The Truck Dispatching Problem"**.
+O **Problema de Roteamento de Veículos** (*Vehicle Routing Problem* ou *VRP*) foi introduzido em 1959 por [**Dantzig** e **Ramser**](http://www.jstor.org/stable/2627477 "The Truck Dispatching Problem"), com o artigo **"The Truck Dispatching Problem"**.
 
 <p></p>
 
 <a href="http://www.jstor.org/stable/2627477" target="_blank" title="Dantzig, George B., and John H. Ramser. 'The truck dispatching problem.' Management science 6.1 (1959): 80-91." class="not-doted">
 <img class="polaroid" src="img/the-truck-dispatching.png" alt="Dantzig, George B., and John H. Ramser. 'The truck dispatching problem.' Management science 6.1 (1959): 80-91." width="418" height="161">
 </a>
-<!-- 
-<small><em>Figura 1: Dantzig, George B., and John H. Ramser. "The truck dispatching problem." Management science 6.1 (1959): 80-91.</em></small>
- -->
 
-> **LINKAR** com quem identificou que ele é np-hard.. foram haimovich and rinnooy ?
+<p></p>
 
+A fundamentação do *Problema de Roteamento de Veículos* está em definir um **conjunto de rotas** a serem percorridas por veículos, reduzindo os custos com transportes até determinados **consumidores**, dado à distância, e obedecendo que: cada rota começa e termina num ponto inicial (**depósito**), todo consumidor é visitado somente uma vez por somente um veículo e a demanda total de qualquer rota não pode ultrapassar capacidade de um veículo.
 
-O VRP é um problema de otimização combinatorial difícil (**NP-Difícil** <small>, NP-hard, ou NP-complexo</small>) por não existir algoritmos exatos que podem confirmar uma busca eficiente no espaço de tempo computacional viável, quando o número de localidades a visitar é grande.
+<img class="polaroid" src="img/vrp.png" alt="Exemplo de Vehicle Routing Problem">
 
-<a href="https://pt.wikipedia.org/wiki/NP-dif%C3%ADcil" target="_blank" title="NP-difícil" class="not-doted">
-<img class="polaroid" src="img/wikipedia-np-hard.png" alt="NP-difícil" width="523" height="163">
-</a>
+<br>
 
-
-
-Existe um grupo de problemas com o mesmo objetivo de sistema de roteamento, dentre eles: 
+Existem variações do VRP, baseadas na capacidade do veículo, prioridades de entrega, janela de tempo, etc. Existe um grupo de problemas com o mesmo objetivo do problema de roteamento, dentre eles:
 
 <ul>
     <li class="pointer" title="Edmonds, Jack, and Ellis L. Johnson. 'Matching, Euler tours and the Chinese postman.' Mathematical programming 5.1 (1973): 88-124."><i class="text-orange fa fa-envelope"></i> Problema do carteiro chinês</li>
@@ -60,14 +54,21 @@ Existe um grupo de problemas com o mesmo objetivo de sistema de roteamento, dent
     <li><i class="text-orange fa fa-clock-o"></i> Problema de roteamento com janelas de tempo</li>
 </ul>
 
----
+<br>
 
+VRPs podem ser classificados de acordo com suas propriedades no que diz respeito aos pedidos a serem cumpridos, a frota disponível, a estrutura de rota, os objetivos e o planejamento considerado. Uma visão geral destas dimensões é dada na seguinte figura, retirada de <a href="http://link.springer.com/article/10.1007/s12159-012-0080-2" target="_blank">`Drexl, Michael. "Rich vehicle routing in theory and practice." Logistics Research 5.1-2 (2012): 47-63`</a>.
 
-Em um depósito central ou garagem, utilizam-se um número de veículos idênticos V, com capacidade máxima uniforme Q, para atender a um conjunto de demandas, representadas por quantidades qi onde i é um dos N consumidores, i ∈  = {0,...,N+1}, sendo 0 e N+1 um mesmo depósito central, onde partem e chegam os veículos. Cada trecho entre dois clientes i e j, possui um custo simétrico associado cij = cji mais comumente associada ao PRVC já citado na seção anterior, ou do inglês, CVRP, pois no referido trabalho o autor já considerou a restrição de capacidade do veículo. Uma generalização do PRVC é o Problema de Roteamento de Veículos com Janela de Tempo (PRVJT) ou Vehicle Routing Problem with Time Window (VRPTW) que, além da limitação de capacidade, inclui a restrição do intervalo de tempo para atendimento: o veículo tem que chegar a um consumidor dentro de um intervalo de tempo, denominada janela de tempo, Time Window. Normalmente, considera-se permitido ao veículo chegar antes do horário previsto em um consumidor, mas será necessário esperar o momento de iniciar o serviço, ou seja, esperar a “abertura” da janela de tempo para a carga ou descarga das encomendas. Todo veículo tem um tempo de serviço, que somente depois de transcorrido poderá partir para outro consumidor. Em alguns casos, costuma-se relaxar a janela de tempo, permitindo o início do serviço antes da abertura da janela ou após o fechamento da janela de tempo, somando-se um custo adicional por esta violação.
+<img class="polaroid" src="img/drexl.png" alt="Rich vehicle routing in theory and practice">
 
-<img class="polaroid" style="margin-bottom: 0" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Vehicle_Routing_Problem_Example.svg/492px-Vehicle_Routing_Problem_Example.svg.png" alt="Exemplo de Vehicle Routing Problem">
+<br>
 
-<small><em>Exemplo de Vehicle Routing Problem</em></small>
+VRP é considerado um problema de otimização combinatorial difícil devido ao tamanho que seu conjunto de localizades pode atingir. 
+
+Por não existir algoritmos exatos que podem confirmar uma busca eficiente no espaço de tempo computacional viável, `Lenstra, Jan Karel, and A. H. G. Kan. "Complexity of vehicle routing and scheduling problems. (1981)"` provam que esse problema é **NP-Difícil** (<small>NP-hard ou NP-complexo</small>).
+
+<a href="https://pt.wikipedia.org/wiki/NP-dif%C3%ADcil" target="_blank" title="NP-difícil" class="not-doted">
+<img class="polaroid" src="img/wikipedia-np-hard.png" alt="NP-difícil" width="523" height="163">
+</a>
 
 <br>
 <br>
@@ -95,6 +96,10 @@ Para minimizar custos e tornar todo o processo mais eficiente, são aplicados pr
 
 <img class="polaroid" src="http://www.charitywater.org/_files/blog/wp-content/uploads/2015/04/blog_post.jpg">
 
+* Roteamento de entrega postal
+
+<img src="http://www.tribunahoje.com/vgmidia/resize/320/324/imagens/58949_ext_arquivo.jpg" class="polaroid">
+
 #### **OpenRouteService**
 
 <a href="http://wiki.openstreetmap.org/wiki/OpenRouteService" target="_blank" title="OpenRouteService">OpenRouteService</a> é um sistema desenvolvido pelo [University of Heidelberg GIScience Research Group](http://giscience.uni-hd.de/) para auxiliar a criação de rotas na plataforma <a href="http://www.openstreetmap.org/" target="_blank" title="OpenStreetMap">OpenStreetMap</a>. Essa plataforma é muito utilizada para criar rotas alternativas em cenários de desastres naturais (Emergency Route Service).
@@ -102,13 +107,22 @@ Para minimizar custos e tornar todo o processo mais eficiente, são aplicados pr
 <a href="http://www.openrouteservice.org/" title="OpenRouteService" target="_blank" class="not-doted">
     <img class="polaroid" src="http://wiki.openstreetmap.org/w/images/e/e2/ORS_EmergencyRouteService.png" alt="OpenRouteService">
 </a>
+
+<p></p>
+
+#### **Spider Design - SINTEF**
+
+<a href="http://www.sintef.no/" target="_blank">SINTEF</a> é uma instituição de pesquisa sem fins lucrativos, a maior organização da Escandinávia dedicada a atividades de pesquisa e desenvolvimento. <a href="http://www.sintef.no/projectweb/transportation-planning/software/spider/" target="_blank">**Spider**</a> é uma biblioteca para otimização de planejamento de transporte, atuando em alguns cenários de distribuição de pães, jornais, sorvete, sangue.
+
+<img src="img/spider.png" alt="">
+
 </div>
 
 <br>
 <br>
 
 <h2 class="text-green">
-    <i class="fa fa-arrow-down bounce-down"></i> Referência adicional <i class="fa fa-arrow-down bounce-down"></i>
+    <i class="fa fa-arrow-down bounce-down"></i> Referência adicional e Lista de links <i class="fa fa-arrow-down bounce-down"></i>
 </h2>
 
 <div class="slide">
@@ -116,6 +130,10 @@ Para minimizar custos e tornar todo o processo mais eficiente, são aplicados pr
 
 <a href="http://www.jstor.org/stable/2627477" target="_blank" title="The truck dispatching problem">
 `Dantzig, George B., and John H. Ramser. "The truck dispatching problem." Management science 6.1 (1959): 80-91.`
+</a>
+
+<a href="http://onlinelibrary.wiley.com/doi/10.1002/net.3230110211/abstract" target="_blank" title="Complexity of vehicle routing and scheduling problems">
+`Lenstra, Jan Karel, and A. H. G. Kan. "Complexity of vehicle routing and scheduling problems." Networks 11.2 (1981): 221-227.`
 </a>
 
 <a href="http://dl.acm.org/citation.cfm?id=578533" target="_blank" title="Computers and intractability : a guide to the theory of NP-completeness">
