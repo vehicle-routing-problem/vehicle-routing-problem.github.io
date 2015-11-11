@@ -6,8 +6,12 @@ style: center
 ---
 {::options parse_block_html="true" /}
 
-# Vehicle Routing Problem
+### Vehicle Routing Problem
 {: .text-orange}
+
+# Problema de Roteamento de Veículos
+{: .text-orange}
+
 
 <span class="fa-stack subtlecircle" style="font-size:100px; background: white">
   <i class="fa fa-circle fa-stack-2x text-white"></i>
@@ -16,11 +20,54 @@ style: center
 
 <br>
 
-**TODO** definição/explicação do tema
+O **Problema de Roteamento de Veículos** (*Vehicle Routing Problem* ou *VRP*) foi introduzido em 1959 por [**Dantzig** e **Ramser**](http://www.jstor.org/stable/2627477 "The Truck Dispatching Problem") com o artigo **"The Truck Dispatching Problem"**.
 
-**TODO** origem histórica
+<p></p>
 
-**TODO** exemplificação;
+<a href="http://www.jstor.org/stable/2627477" target="_blank" title="Dantzig, George B., and John H. Ramser. 'The truck dispatching problem.' Management science 6.1 (1959): 80-91." class="not-doted">
+<img class="polaroid" src="img/the-truck-dispatching.png" alt="Dantzig, George B., and John H. Ramser. 'The truck dispatching problem.' Management science 6.1 (1959): 80-91." width="418" height="161">
+</a>
+<!-- 
+<small><em>Figura 1: Dantzig, George B., and John H. Ramser. "The truck dispatching problem." Management science 6.1 (1959): 80-91.</em></small>
+ -->
+
+> **LINKAR** com quem identificou que ele é np-hard.. foram haimovich and rinnooy ?
+
+
+O VRP é um problema de otimização combinatorial difícil (**NP-Difícil** <small>, NP-hard, ou NP-complexo</small>) por não existir algoritmos exatos que podem confirmar uma busca eficiente no espaço de tempo computacional viável, quando o número de localidades a visitar é grande.
+
+<a href="https://pt.wikipedia.org/wiki/NP-dif%C3%ADcil" target="_blank" title="NP-difícil" class="not-doted">
+<img class="polaroid" src="img/wikipedia-np-hard.png" alt="NP-difícil" width="523" height="163">
+</a>
+
+
+
+Existe um grupo de problemas com o mesmo objetivo de sistema de roteamento, dentre eles: 
+
+<ul>
+    <li class="pointer" title="Edmonds, Jack, and Ellis L. Johnson. 'Matching, Euler tours and the Chinese postman.' Mathematical programming 5.1 (1973): 88-124."><i class="text-orange fa fa-envelope"></i> Problema do carteiro chinês</li>
+
+    <li class="pointer" title="Fleischmann, Bernhard. 'A cutting plane procedure for the travelling salesman problem on road networks.' European Journal of Operational Research 21.3 (1985): 307-317."><i class="text-orange fa fa-briefcase"></i> Problema do caixeiro viajante rodoviário</li>
+
+    <li><i class="text-orange fa fa-suitcase"></i> Problema dos Múltiplos-caixeiros viajantes</li>
+
+    <li><i class="text-orange fa fa-bus"></i> Problema de roteamento com depósito único e multiplos veículos</li>
+
+    <li><i class="text-orange fa fa-motorcycle"></i> Problema de roteamento com múltiplos depósitos e múltiplos veículos</li>
+
+    <li><i class="text-orange fa fa-taxi"></i> Problema de roteamento de veículos capacitados</li>
+
+    <li><i class="text-orange fa fa-clock-o"></i> Problema de roteamento com janelas de tempo</li>
+</ul>
+
+---
+
+
+Em um depósito central ou garagem, utilizam-se um número de veículos idênticos V, com capacidade máxima uniforme Q, para atender a um conjunto de demandas, representadas por quantidades qi onde i é um dos N consumidores, i ∈  = {0,...,N+1}, sendo 0 e N+1 um mesmo depósito central, onde partem e chegam os veículos. Cada trecho entre dois clientes i e j, possui um custo simétrico associado cij = cji mais comumente associada ao PRVC já citado na seção anterior, ou do inglês, CVRP, pois no referido trabalho o autor já considerou a restrição de capacidade do veículo. Uma generalização do PRVC é o Problema de Roteamento de Veículos com Janela de Tempo (PRVJT) ou Vehicle Routing Problem with Time Window (VRPTW) que, além da limitação de capacidade, inclui a restrição do intervalo de tempo para atendimento: o veículo tem que chegar a um consumidor dentro de um intervalo de tempo, denominada janela de tempo, Time Window. Normalmente, considera-se permitido ao veículo chegar antes do horário previsto em um consumidor, mas será necessário esperar o momento de iniciar o serviço, ou seja, esperar a “abertura” da janela de tempo para a carga ou descarga das encomendas. Todo veículo tem um tempo de serviço, que somente depois de transcorrido poderá partir para outro consumidor. Em alguns casos, costuma-se relaxar a janela de tempo, permitindo o início do serviço antes da abertura da janela ou após o fechamento da janela de tempo, somando-se um custo adicional por esta violação.
+
+<img class="polaroid" style="margin-bottom: 0" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Vehicle_Routing_Problem_Example.svg/492px-Vehicle_Routing_Problem_Example.svg.png" alt="Exemplo de Vehicle Routing Problem">
+
+<small><em>Exemplo de Vehicle Routing Problem</em></small>
 
 <br>
 <br>
@@ -66,6 +113,10 @@ Para minimizar custos e tornar todo o processo mais eficiente, são aplicados pr
 
 <div class="slide">
 <p></p>
+
+<a href="http://www.jstor.org/stable/2627477" target="_blank" title="The truck dispatching problem">
+`Dantzig, George B., and John H. Ramser. "The truck dispatching problem." Management science 6.1 (1959): 80-91.`
+</a>
 
 <a href="http://dl.acm.org/citation.cfm?id=578533" target="_blank" title="Computers and intractability : a guide to the theory of NP-completeness">
 `Garey, Michael R., and David S. Johnson. "Computers and intractability : a guide to the theory of NP-completeness." San Francisco: W.H. Freeman (1979).`

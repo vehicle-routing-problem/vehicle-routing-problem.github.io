@@ -10,9 +10,9 @@ markdown: kramdown
 highlighter: pygments
 
 ### content configuration ###
-title:       "Vehicle Routing Problem"
-keywords:    "vehicle routing problem, np complete problem, np hard"
-description: "The Vehicle Routing Problem (VRP) can be described as the problem of designing optimal delivery or collection routes from one or several depots to a number of geographically scattered cities or customers, subject to side constraints. (LAPORTE, 1992)"
+title:       "Problema de Roteamento de Veículos"
+keywords:    "Problema de Roteamento de Veículos"
+description: "O Problema de Roteamento de Veículos Estático (Vehicle Routing Problem ou VRP) foi introduzido em 1959 por Dantzig e Ramser com o artigo “The Truck Dispatching Problem”, sendo um problema de otimização combinatorial difícil."
 source_link: "https://vehicle-routing-problem.github.io/"
 favicon:     #put a path like: "img/favicon.ico"
 touch_icon:  #put a path like: "img/apple-touch-icon.png"
