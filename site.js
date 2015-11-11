@@ -91,5 +91,31 @@ $(document).ready(function (){
         }
 	});
 
+    var mutex = false;
+
+    $('h2 .fa').parent().click(function(event) {
+        event.stopPropagation();
+
+        if (mutex) return false;
+        mutex = true;
+
+        var self = this;
+        var slide = $(self).next();
+
+        if (slide.is(":visible") ) {
+            slide.slideUp(2500, function() {
+                $(self).find('.fa-arrow-up').removeClass('fa-arrow-up').addClass('fa-arrow-down');
+                $(self).find('.bounce-up').removeClass('bounce-up').addClass('bounce-down');
+                mutex = false;
+            });
+        } else {
+            slide.slideDown(2500, function() {
+                $(self).find('.fa-arrow-down').removeClass('fa-arrow-down').addClass('fa-arrow-up');
+                $(self).find('.bounce-down').removeClass('bounce-down').addClass('bounce-up');
+                mutex = false;
+            });
+        }
+    })
+
 });
 

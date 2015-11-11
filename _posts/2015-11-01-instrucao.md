@@ -4,6 +4,7 @@ bg: white
 color: black
 style: center
 ---
+{::options parse_block_html="true" /}
 
 # Vehicle Routing Problem
 {: .text-orange}
@@ -24,9 +25,11 @@ style: center
 <br>
 <br>
 
-## Aplicação na Vida Real
-{: .text-blue}
+<h2 class="text-blue">
+    <i class="fa fa-arrow-down bounce-down"></i> Aplicação na Vida Real <i class="fa fa-arrow-down bounce-down"></i>
+</h2>
 
+<div class="slide">
 #### **Gerenciamento da Cadeia de Suprimentos**
 
 Sistemas logísticos são definidos pelo planejamento, organização e controle de operações de fluxo de mercadorias. Suas atividades principais são: aquisição de matéria-prima, gestão de estoques, processamento de pedidos, compras e armazenagem, manuseio de materiais, programação da produção e entrega ao consumidor final.
@@ -50,13 +53,16 @@ Para minimizar custos e tornar todo o processo mais eficiente, são aplicados pr
 <a href="http://www.openrouteservice.org/" title="OpenRouteService" target="_blank" class="not-doted">
     <img class="polaroid" src="http://wiki.openstreetmap.org/w/images/e/e2/ORS_EmergencyRouteService.png" alt="OpenRouteService">
 </a>
+</div>
 
 <br>
 <br>
 
-## Referência adicional
-{: .text-green}
+<h2 class="text-green">
+    <i class="fa fa-arrow-down bounce-down"></i> Referência adicional <i class="fa fa-arrow-down bounce-down"></i>
+</h2>
 
+<div class="slide">
 <a href="http://dl.acm.org/citation.cfm?id=578533" target="_blank" title="Computers and intractability : a guide to the theory of NP-completeness">
 `Garey, Michael R., and David S. Johnson. "Computers and intractability : a guide to the theory of NP-completeness." San Francisco: W.H. Freeman (1979).`
 </a>
@@ -82,5 +88,6 @@ Para minimizar custos e tornar todo o processo mais eficiente, são aplicados pr
 </a>
 
 <a href="http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&amp;co_obra=185162" target="_blank" title="Um algoritmo híbrido para o problema de roteamento de veículos estático e dinâmico com janela de tempo">
-`Alvarenga, Guilherme Bastos. Um algoritmo híbrido para o problema de roteamento de veículos estático e dinâmico com janela de tempo. Diss. PhD thesis, Universidade Federal de Minas Gerais, 2005.`
+`Alvarenga, Guilherme Bastos. "Um algoritmo híbrido para o problema de roteamento de veículos estático e dinâmico com janela de tempo". Diss. PhD thesis, Universidade Federal de Minas Gerais, 2005.`
 </a>
+</div>
