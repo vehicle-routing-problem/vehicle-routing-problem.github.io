@@ -13,10 +13,22 @@ style: center
 {: .text-orange}
 
 
-<span class="fa-stack subtlecircle" style="font-size:100px; background: white">
-  <i class="fa fa-circle fa-stack-2x text-white"></i>
-  <i class="fa fa-car fa-stack-1x text-orange"></i>
-</span>
+<p style="font-size: 0;">
+    <span class="fa-stack subtlecircle hidden-mobile" style="font-size: 50px; background: white">
+      <i class="fa fa-circle fa-stack-2x text-white"></i>
+      <i class="fa fa-building-o fa-stack-1x text-orange"></i>
+    </span>
+
+    <span class="fa-stack subtlecircle" style="font-size:100px; background: white;margin: 0 25px;">
+      <i class="fa fa-circle fa-stack-2x text-white"></i>
+      <i class="fa fa-car fa-stack-1x text-orange"></i>
+    </span>
+
+    <span class="fa-stack subtlecircle hidden-mobile" style="font-size: 50px; background: white">
+      <i class="fa fa-circle fa-stack-2x text-white"></i>
+      <i class="fa fa-home fa-stack-1x text-orange"></i>
+    </span>
+</p>
 
 <br>
 
@@ -64,7 +76,7 @@ VRPs podem ser classificados de acordo com suas propriedades no que diz respeito
 
 VRP é considerado um problema de otimização combinatorial difícil devido ao tamanho que seu conjunto de localizades pode atingir. 
 
-Por não existir algoritmos exatos que podem confirmar uma busca eficiente no espaço de tempo computacional viável, `Lenstra, Jan Karel, and A. H. G. Kan. "Complexity of vehicle routing and scheduling problems. (1981)"` provam que esse problema é **NP-Difícil** (<small>NP-hard ou NP-complexo</small>).
+Por não existir algoritmos exatos que podem confirmar uma busca eficiente no espaço de tempo computacional viável, `Lenstra, Jan Karel, and A. H. G. Rinnooy Kan. "Complexity of vehicle routing and scheduling problems. (1981)"` provam que esse problema é **NP-Difícil** (<small>NP-hard ou NP-complexo</small>).
 
 <a href="https://pt.wikipedia.org/wiki/NP-dif%C3%ADcil" target="_blank" title="NP-difícil" class="not-doted">
 <img class="polaroid" src="img/wikipedia-np-hard.png" alt="NP-difícil" width="523" height="163">
@@ -133,7 +145,7 @@ Para minimizar custos e tornar todo o processo mais eficiente, são aplicados pr
 </a>
 
 <a href="http://onlinelibrary.wiley.com/doi/10.1002/net.3230110211/abstract" target="_blank" title="Complexity of vehicle routing and scheduling problems">
-`Lenstra, Jan Karel, and A. H. G. Kan. "Complexity of vehicle routing and scheduling problems." Networks 11.2 (1981): 221-227.`
+`Lenstra, Jan Karel, and A. H. G. Rinnooy Kan. "Complexity of vehicle routing and scheduling problems." Networks 11.2 (1981): 221-227.`
 </a>
 
 <a href="http://dl.acm.org/citation.cfm?id=578533" target="_blank" title="Computers and intractability : a guide to the theory of NP-completeness">

@@ -1,3 +1,35 @@
+iframe {
+  width: 100%;
+  max-width: 960px;
+  max-height: 600px;
+}
+
+.section.p-_2015_11_05_agradecimentos {
+  padding: 100px 0 10px;
+}
+
+li.inline {
+  display: inline;
+  float: left;
+  vertical-align: top;
+  width: 33.3333%;
+}
+
+.clear { clear: both; }
+
+li img {
+    max-height: 90px;
+}
+
+li figure {
+  text-align: center;
+}
+
+li figcaption {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
 .pointer, h2 {
     cursor: pointer;
 }
@@ -119,7 +151,14 @@
     overflow: hidden;
     -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
     -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    box-shadow: 0 3px 6px rgba(0,0,0,.25);
     background-color: rgba(255,255,255,.7);
+}
+
+.shadow {
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  box-shadow: 0 3px 6px rgba(0,0,0,.25);
 }
 
 @-webkit-keyframes love {
@@ -165,4 +204,21 @@ img.polaroid {
 a {
     text-decoration: none;
     border-bottom: 1px dotted;
+}
+
+@media screen and (max-width: 960px) {
+  li.inline {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+}
+
+#footer .container p {
+  font-size: 11px;
 }
