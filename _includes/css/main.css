@@ -66,6 +66,7 @@ hr {
 
 .container { word-wrap: break-word; }
 .center { text-align: center; }
+.justify { text-align: justify; }
 .left, .container .left { text-align: left; }
 
 .container h1, .container h2, .container h3, .container h4 {
