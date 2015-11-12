@@ -156,6 +156,14 @@ Para minimizar custos e tornar todo o processo mais eficiente, são aplicados pr
 `Haimovich, M. A. R. K., and A. H. G. Rinnooy Kan. "Bounds and heuristics for capacitated routing problems." Mathematics of operations Research 10.4 (1985).`
 </a>
 
+<a href="http://dx.doi.org/10.1007/3-540-44849-7_31" target="_blank" title="Differential approximation for some routing problems">
+`Bazgan, Cristina, Refael Hassin, and Jérôme Monnot. "Differential approximation for some routing problems." Algorithms and Complexity. Springer Berlin Heidelberg. (2003): 277-288.`
+</a>
+
+<a href="https://ideas.repec.org/p/fth/amsact/ae_1-88.html" target="_blank" title="Analysis Of Heuristics For Vehicle Routing Problems">
+`Haimovich, M., Rinnoooy Kan, and Leendert Stougie. "Analysis of heuristics for vehicle routing problems". Universiteit Amsterdam - Institute of Actuarial Sciences and Econometrics. (1988).`
+</a>
+
 <a href="http://doi.org/10.1287/mnsc.40.10.1276" target="_blank" title="A tabu search heuristic for the vehicle routing problem.">
 `Gendreau, Michel, Alain Hertz, and Gilbert Laporte. "A tabu search heuristic for the vehicle routing problem." Management science 40.10 (1994): 1276-1290.`
 </a>
@@ -163,6 +171,8 @@ Para minimizar custos e tornar todo o processo mais eficiente, são aplicados pr
 <a href="http://doi.org/10.1016/0377-2217(92)90192-C" target="_blank" title="The vehicle routing problem: An overview of exact and approximate algorithms">
 `Laporte, Gilbert. "The vehicle routing problem: An overview of exact and approximate algorithms." European Journal of Operational Research 59.3 (1992): 345-358.`
 </a>
+
+`Bräysy, O., et al. A survey of rich vehicle routing models and heuristic solution techniques. Technical report, SINTEF, (2002).`
 
 <a href="http://doi.org/10.4236/iim.2012.43010" target="_blank" title="A survey on the vehicle routing problem and its variants">
 `Kumar, Suresh Nanda, and Ramasamy Panneerselvam. "A survey on the vehicle routing problem and its variants." (2012).`
